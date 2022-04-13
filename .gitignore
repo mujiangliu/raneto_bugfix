@@ -20,7 +20,7 @@ coverage
 build/Release
 
 # Dependency directory
-node_modules
+#node_modules
 
 # npm Components (Installed Automatically)
 themes/default/public/lib/
