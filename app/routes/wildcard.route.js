@@ -97,6 +97,8 @@ function route_wildcard (config) {
         canEdit = config.allow_editing;
       }
 
+      console.log(req.get('host'), req.originalUrl, '00000000')
+
       return res.render(render, {
         config        : config,
         pages         : build_nested_pages(pageList),

@@ -76,7 +76,7 @@ var config = {
   oauth2 : {
     client_id: 'GOOGLE_CLIENT_ID',
     client_secret: 'GOOGLE_CLIENT_SECRET',
-    callback: 'http://localhost:3000/auth/google/callback',
+    callback: 'https://tjg-knowledge.saasp.vdyoo.com/auth/google/callback',
     hostedDomain: 'google.com'
   },
   secret: 'someCoolSecretRightHere',
