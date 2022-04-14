@@ -97,14 +97,15 @@ function route_wildcard (config) {
         canEdit = config.allow_editing;
       }
 
-      console.log(req.get('host'), req.originalUrl, '00000000')
+      // console.log(req.get('host'), req, req.originalUrl, '00000000', )
 
       return res.render(render, {
         config        : config,
         pages         : build_nested_pages(pageList),
         meta          : meta,
         content       : content,
-        current_url   : req.protocol + '://' + req.get('host') + req.originalUrl,
+        // current_url   : req.protocol + '://' + req.get('host') + req.originalUrl,  // 测试环境
+        current_url   : 'https://tjg-knowledge.saasp.vdyoo.com/' + req.originalUrl, // 线上环境
         body_class    : template + '-' + contentProcessors.cleanString(slug),
         last_modified : await utils.getLastModified(config, meta, file_path),
         lang          : config.lang,
