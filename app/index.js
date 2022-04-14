@@ -46,7 +46,7 @@ function initialize (config) {
   var router = express.Router();
 
   // Set IP Address and Port
-  app.set('host', process.env.HOST || '127.0.0.1');
+  app.set('host', process.env.HOST || 'https://tjg-knowledge.saasp.vdyoo.com/');
   app.set('port', process.env.PORT || 3000);
 
   // set locale as date and time format
