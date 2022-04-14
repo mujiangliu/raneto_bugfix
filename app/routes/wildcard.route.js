@@ -105,7 +105,7 @@ function route_wildcard (config) {
         meta          : meta,
         content       : content,
         // current_url   : req.protocol + '://' + req.get('host') + req.originalUrl,  // 测试环境
-        current_url   : 'https://tjg-knowledge.saasp.vdyoo.com/' + req.originalUrl, // 线上环境
+        current_url   : 'https://tjg-knowledge.saasp.vdyoo.com' + req.originalUrl, // 线上环境
         body_class    : template + '-' + contentProcessors.cleanString(slug),
         last_modified : await utils.getLastModified(config, meta, file_path),
         lang          : config.lang,
