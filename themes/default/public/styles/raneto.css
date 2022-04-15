@@ -194,6 +194,12 @@
 .error {
   padding: 0 20px;
 }
+.float-right{
+  float: right;
+}
+.footer .container-fluid a {
+  color: #999;
+}
 blockquote p{
   font-size: 13.5px;
 }

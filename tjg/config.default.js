@@ -98,7 +98,7 @@ var config = {
   searchExtraLanguages: ['ru'],
 
   // Sets the format for datetime's
-  datetime_format: 'Do MMM YYYY',
+  datetime_format: 'YYYY-MM-DD',
 
   // Set to true to render suitable layout for RTL languages
   rtl_layout: false,
