@@ -15,20 +15,22 @@
               {{^config.menu_on_page_collapsible}}{{lang.global.mainArticles}}{{/config.menu_on_page_collapsible}}
               <!-- {{#config.menu_on_page_collapsible}}
                 <a href="#category_{{sort}}" data-toggle="collapse">{{lang.global.mainArticles}}</a>
-              {{/config.menu_on_page_collapsible}} -->
-              <!-- {{#canEdit}}
+              {{/config.menu_on_page_collapsible}}
+              {{#canEdit}}
                 <a class="add-page" data-toggle="modal" data-target="#addModal" title="{{lang.page.addPage}}"><span style="font-weight: bold; font-size: 16px; cursor:pointer">&#43;</span></a>
               {{/canEdit}} -->
             </h5>
             {{/is_index}}
             {{^is_index}}
             <h5 class="category-title">
+              <span>
               {{^config.menu_on_page_collapsible}}
                 {{title}}
               {{/config.menu_on_page_collapsible}}
               {{#config.menu_on_page_collapsible}}
                 {{title}}
               {{/config.menu_on_page_collapsible}}
+            </span>
               {{#canEdit}}
                 <a class="add-page" data-toggle="modal" data-target="#addModal" title="{{lang.page.addPage}}"><span style="font-weight: bold; font-size: 16px; cursor:pointer">&#43;</span></a>
               {{/canEdit}}
@@ -54,7 +56,7 @@
 
       {{#canEdit}}
         <div class="btn-group btn-group-sm float-right">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-secondary dropdown-toggle" style="padding:8px 12px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{lang.page.actions}} <span class="caret"></span>
           </button>
           <div class="dropdown-menu">

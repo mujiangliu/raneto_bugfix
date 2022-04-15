@@ -89,7 +89,8 @@
       //   .toLowerCase()
       //   .replace(/\s+/g, '-');
       // current_category = text !== 'main-articles' ? text : '';
-      var text = $(this).parent().children(':first').text().toUpperCase();
+      // console.log($(this).parent().children(':first').text().replace(/\s/g, '').toUpperCase(), '1111111')
+      var text = $(this).parent().children(':first').text().replace(/\s/g, '').toUpperCase();
       current_category = text !== 'main-articles' ? text : '';
     });
 
